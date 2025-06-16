@@ -1,7 +1,5 @@
 import json
-
 import requests
-
 
 if __name__ == "__main__":
     # Get data from Dog API
