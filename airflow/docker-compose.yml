@@ -238,10 +238,10 @@ services:
   #   restart: always
   #   command: server /data --console-address ":9001"
 
-  # adminer:
-  #   image: adminer
-  #   ports:
-  #     - 8090:8080
+  adminer:
+    image: adminer
+    ports:
+    - 8090:8080
 
   mydb:
     image: postgres:13

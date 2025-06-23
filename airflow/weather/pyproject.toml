@@ -1,0 +1,18 @@
+[project]
+name = "weather"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "tew",email = "154518680+Supitchaya-P@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dbt-core (>=1.10.2,<2.0.0)",
+    "dbt-postgres (>=1.9.0,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

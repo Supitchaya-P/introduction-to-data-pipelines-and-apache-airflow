@@ -1,0 +1,31 @@
+[0m10:03:47.829881 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ddebed7f500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ddebf08d7f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ddebed7f4a0>]}
+
+
+============================== 10:03:47.906194 | ba4d11ea-e4ba-4eed-a88f-18c79b89ba3f ==============================
+[0m10:03:47.906194 [info ] [MainThread]: Running with dbt=1.10.2
+[0m10:03:47.907626 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/codespace/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt init', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:03:47.988891 [info ] [MainThread]: Creating dbt configuration folder at /home/codespace/.dbt
+[0m10:05:05.939015 [debug] [MainThread]: Starter project path: /home/codespace/.cache/pypoetry/virtualenvs/weather-1CS2JGND-py3.12/lib/python3.12/site-packages/dbt/include/starter_project
+[0m10:05:05.955758 [info ] [MainThread]: 
+Your new dbt project "weather_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m10:05:05.957348 [info ] [MainThread]: Setting up your profile.
+[0m10:09:17.650147 [info ] [MainThread]: Profile weather_project written to /home/codespace/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m10:09:17.652687 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 330.03067, "process_in_blocks": "24096", "process_kernel_time": 0.619946, "process_mem_max_rss": "123584", "process_out_blocks": "33776", "process_user_time": 5.475395}
+[0m10:09:17.653343 [debug] [MainThread]: Command `dbt init` succeeded at 10:09:17.653224 after 330.03 seconds
+[0m10:09:17.653918 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ddebf623260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ddebe943e00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ddebe6ddfa0>]}
+[0m10:09:17.654541 [debug] [MainThread]: Flushing usage events
+[0m10:09:18.644026 [debug] [MainThread]: An error was encountered while trying to flush usage events
