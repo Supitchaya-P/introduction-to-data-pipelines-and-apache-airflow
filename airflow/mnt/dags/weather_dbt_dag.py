@@ -1,8 +1,6 @@
 from airflow.utils import timezone
-
 from cosmos import DbtDag, ProjectConfig, ProfileConfig
 from cosmos.profiles import PostgresUserPasswordProfileMapping
-
 
 profile_config = ProfileConfig(
     profile_name="weather",

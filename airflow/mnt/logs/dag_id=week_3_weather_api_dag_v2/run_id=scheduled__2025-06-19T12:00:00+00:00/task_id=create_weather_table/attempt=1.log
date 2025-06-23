@@ -1,0 +1,17 @@
+[2025-06-19T13:19:32.409+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: week_3_weather_api_dag_v2.create_weather_table scheduled__2025-06-19T12:00:00+00:00 [queued]>
+[2025-06-19T13:19:32.418+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: week_3_weather_api_dag_v2.create_weather_table scheduled__2025-06-19T12:00:00+00:00 [queued]>
+[2025-06-19T13:19:32.419+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 1
+[2025-06-19T13:19:32.431+0000] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): create_weather_table> on 2025-06-19 12:00:00+00:00
+[2025-06-19T13:19:32.449+0000] {standard_task_runner.py:60} INFO - Started process 344 to run task
+[2025-06-19T13:19:32.454+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'week_3_weather_api_dag_v2', 'create_weather_table', 'scheduled__2025-06-19T12:00:00+00:00', '--job-id', '83', '--raw', '--subdir', 'DAGS_FOLDER/week_3_weather_api_dag_v2.py', '--cfg-path', '/tmp/tmp2452u1s7']
+[2025-06-19T13:19:32.455+0000] {standard_task_runner.py:88} INFO - Job 83: Subtask create_weather_table
+[2025-06-19T13:19:32.513+0000] {task_command.py:423} INFO - Running <TaskInstance: week_3_weather_api_dag_v2.create_weather_table scheduled__2025-06-19T12:00:00+00:00 [running]> on host 5513fff5175e
+[2025-06-19T13:19:32.609+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='supitchaya.p99@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='week_3_weather_api_dag_v2' AIRFLOW_CTX_TASK_ID='create_weather_table' AIRFLOW_CTX_EXECUTION_DATE='2025-06-19T12:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-06-19T12:00:00+00:00'
+[2025-06-19T13:19:32.610+0000] {warnings.py:109} WARNING - /opt/***/dags/week_3_weather_api_dag_v2.py:50: AirflowProviderDeprecationWarning: The "schema" arg has been renamed to "database" as it contained the database name.Please use "database" to set the database name.
+  pg_hook = PostgresHook(
+
+[2025-06-19T13:19:32.623+0000] {base.py:83} INFO - Using connection ID 'my_***_conn' for task execution.
+[2025-06-19T13:19:32.629+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-06-19T13:19:32.641+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=week_3_weather_api_dag_v2, task_id=create_weather_table, execution_date=20250619T120000, start_date=20250619T131932, end_date=20250619T131932
+[2025-06-19T13:19:32.707+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-06-19T13:19:32.729+0000] {taskinstance.py:3281} INFO - 1 downstream tasks scheduled from follow-on schedule check

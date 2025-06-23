@@ -1,0 +1,17 @@
+[2025-06-19T13:04:11.183+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_api_dag.load_data_to_postgres scheduled__2025-06-19T12:00:00+00:00 [queued]>
+[2025-06-19T13:04:11.190+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_api_dag.load_data_to_postgres scheduled__2025-06-19T12:00:00+00:00 [queued]>
+[2025-06-19T13:04:11.190+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 1
+[2025-06-19T13:04:11.202+0000] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): load_data_to_postgres> on 2025-06-19 12:00:00+00:00
+[2025-06-19T13:04:11.212+0000] {standard_task_runner.py:60} INFO - Started process 92 to run task
+[2025-06-19T13:04:11.215+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'weather_api_dag', 'load_data_to_postgres', 'scheduled__2025-06-19T12:00:00+00:00', '--job-id', '76', '--raw', '--subdir', 'DAGS_FOLDER/weather_api_dag.py', '--cfg-path', '/tmp/tmpjfhp9xs4']
+[2025-06-19T13:04:11.216+0000] {standard_task_runner.py:88} INFO - Job 76: Subtask load_data_to_postgres
+[2025-06-19T13:04:11.258+0000] {task_command.py:423} INFO - Running <TaskInstance: weather_api_dag.load_data_to_postgres scheduled__2025-06-19T12:00:00+00:00 [running]> on host 5513fff5175e
+[2025-06-19T13:04:11.329+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='supitchaya.p99@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='weather_api_dag' AIRFLOW_CTX_TASK_ID='load_data_to_postgres' AIRFLOW_CTX_EXECUTION_DATE='2025-06-19T12:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-06-19T12:00:00+00:00'
+[2025-06-19T13:04:11.347+0000] {warnings.py:109} WARNING - /opt/***/dags/weather_api_dag.py:70: AirflowProviderDeprecationWarning: The "schema" arg has been renamed to "database" as it contained the database name.Please use "database" to set the database name.
+  pg_hook = PostgresHook(postgres_conn_id="my_postgres_conn", schema="postgres")
+
+[2025-06-19T13:04:11.361+0000] {base.py:83} INFO - Using connection ID 'my_***_conn' for task execution.
+[2025-06-19T13:04:11.399+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-06-19T13:04:11.412+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=weather_api_dag, task_id=load_data_to_***, execution_date=20250619T120000, start_date=20250619T130411, end_date=20250619T130411
+[2025-06-19T13:04:11.469+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-06-19T13:04:11.489+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check
